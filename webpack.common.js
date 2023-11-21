@@ -20,7 +20,8 @@ module.exports = {
           options: {
             // name: "[name].[hash].[ext]",
             name: "[name].[ext]",
-            outputPath: "imgs",
+            outputPath: "/imgs",
+            putlicPath: "/visualisierung/imgs"
           },
         },
       },

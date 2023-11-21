@@ -125,6 +125,7 @@ export class WebsocketApi {
    */
   private onConnected = (client: Socket): void => {
     if (!CONFIG.is_testing) {
+      console.log(`client data: ${client.id}`)
       const clientConnected = [
         "┌──────────────────────────────────────┐",
         "│ New client connected!                │",

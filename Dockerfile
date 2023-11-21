@@ -1,4 +1,5 @@
 FROM node:14.17.5-alpine
+RUN apk add --no-cache python2 make g++
 
 WORKDIR /usr/src/app
 

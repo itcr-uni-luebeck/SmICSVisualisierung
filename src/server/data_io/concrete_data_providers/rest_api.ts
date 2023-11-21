@@ -66,6 +66,7 @@ export class RestAPI extends AbstractDataSource {
     super()
     if (!url.endsWith("/")) url = url.concat("/")
     this.url = url
+    console.log(`Using REST API at ${url}`)
   }
 
   public mapping = (

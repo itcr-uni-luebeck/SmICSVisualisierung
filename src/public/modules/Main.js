@@ -3733,7 +3733,7 @@ class Main extends Component {
       load_new,
     }
 
-    // console.log("Requesting data with parameters:", request_parameters)
+    console.log("Requesting data with parameters:", request_parameters)
 
     self.socket.emit("getVisData", request_parameters)
   }

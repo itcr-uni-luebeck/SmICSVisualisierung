@@ -102,11 +102,11 @@ if (CONFIG.use_auth) {
 }
     
 // serve the static files from the React app
-app.use(express.static(root))
+app.use("/visualisierung", express.static(root))
 
 // handle URLs that don't match the ones above
 app.get("*", function(req, res) {
-  console.log("Other Request")
+  console.log(`Other Request to ${req.url} with protocol ${req.headers.protocol} and host ${req.headers.host}`);
   res.sendFile("index.html", {root}, function(err) {
     if (err) res.status(500).send(err)
   })

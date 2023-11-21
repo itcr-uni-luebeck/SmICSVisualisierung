@@ -30,7 +30,7 @@ class HeaderMenu extends Component {
     this.state = {}
     this.hostname = window.location.hostname
     this.protocol = window.location.protocol
-    this.port = 9787
+    this.port = 443
 
     this.translate = props.translate
   }
@@ -115,7 +115,7 @@ class HeaderMenu extends Component {
       this.translate("predRisk"),
       <LooksTwo />,
       () => {
-        window.open(window.location.origin + "/predRisk", "_blank")
+        window.open(window.location.origin + "/visualisierung/predRisk", "_blank")
       }
     )
 

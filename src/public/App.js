@@ -24,10 +24,10 @@ class App extends Component {
           <Router>
             <Switch>
               <Redirect exact from="/logout" to="/auth/logout" />
-              <Route exact path="/">
+              <Route exact path="/visualisierung">
                 <Main />
               </Route>
-              <Route exact path="/predRisk">
+              <Route exact path="/visualisierung/predRisk">
                 <PredRiskMain />
               </Route>
               <Route>

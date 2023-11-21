@@ -31,7 +31,7 @@ import "../assets/icons/ManageHistory.png"
 
 import { withSocket } from "../hooks/socket"
 
-const img_path = "imgs/"
+const img_path = "/visualisierung/imgs/"
 
 // import "./scss/flex_lm.scss"
 class Flex_LM extends React.Component {

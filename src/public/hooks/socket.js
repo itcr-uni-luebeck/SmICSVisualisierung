@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 
 import io from "socket.io-client"
 
-const port = 3231
 const hostname = window.location.hostname
 const protocol = window.location.protocol
+const port = 443
 const socketUrl = protocol + "//" + hostname + ":" + port
 
 export const SocketContext = createContext()
@@ -33,6 +33,7 @@ export const useSocket = () => {
 // Provider hook that creates socket object and handles state
 function useProvideSocket() {
   const socketClient = io(socketUrl)
+  console.log(`Using socket url: ${socketUrl}`)
 
   socketClient.on("connect", () => {
     console.log("Connected to " + socketUrl + ".")
